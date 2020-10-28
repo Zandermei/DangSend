@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/radio_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <com.two.dangsend.widget.ImageTitleBar
+            android:id="@+id/title_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.two.dangsend.widget.ImageTitleBar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </androidx.viewpager.widget.ViewPager>
+            <FrameLayout
+                android:id="@+id/fragment_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <include layout="@layout/line_view"></include>
+
+        <RadioGroup
+            android:id="@+id/main_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/radio_first"
+                style="@style/Custom.TabRadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:drawableTop="@drawable/select_one"
+                android:text="@string/first"
+                android:textColor="@color/tab_text_color_selector"></RadioButton>
+
+
+            <RadioButton
+                android:id="@+id/radio_two"
+                style="@style/Custom.TabRadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/select_two"
+                android:text="@string/tuj"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radio_three"
+                style="@style/Custom.TabRadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/select_three"
+                android:text="@string/order"></RadioButton>
+
+
+            <RadioButton
+                android:id="@+id/radio_four"
+                style="@style/Custom.TabRadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/select_four"
+                android:text="@string/person"></RadioButton>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <com.two.dangsend.widget.ImageTitleBar
+       android:layout_width="match_parent"
+       android:id="@+id/title_commint"
+       android:layout_height="wrap_content">
+   </com.two.dangsend.widget.ImageTitleBar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <RelativeLayout
+                android:background="#eeeeee"
+                android:id="@+id/good_order_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/goods_order_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/goods_order_pic"
+                    android:textStyle="bold"
+                    android:id="@+id/goods_order_title"
+                    android:gravity="center|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_below="@+id/goods_order_title"
+                    android:layout_toRightOf="@+id/goods_order_pic"
+                    android:id="@+id/goods_order_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ee4433"/>
+            </RelativeLayout>
+
+            <TextView
+                android:background="#ffffff"
+                android:text="请填写收货信息"
+                android:id="@+id/order_address"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="#efefef"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+            </View>
+            <RelativeLayout
+                android:background="#ffffff"
+                android:id="@+id/order_people_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/order_people_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="收货人"/>
+
+                <EditText
+                    android:textColorHint="#666666"
+                    android:id="@+id/order_people_ed"
+                    android:layout_centerVertical="true"
+                    android:layout_below="@+id/order_people_tv"
+                    android:background="@null"
+                    android:hint="请输入联系人姓名"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"/>
+
+            </RelativeLayout>
+            <View
+                android:background="#efefef"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+            </View>
+
+            <RelativeLayout
+                android:background="#ffffff"
+                android:id="@+id/order_phone_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/order_phone_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="联系电话"/>
+
+                <EditText
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:textColorHint="#666666"
+                    android:id="@+id/order_phone_ed"
+                    android:layout_centerVertical="true"
+                    android:layout_below="@+id/order_phone_tv"
+                    android:background="@null"
+                    android:hint="请输入联系人电话"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"/>
+
+            </RelativeLayout>
+            <View
+                android:background="#efefef"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+            </View>
+
+            <RelativeLayout
+                android:background="#ffffff"
+                android:id="@+id/order_address_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/order_address_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="收货地址"/>
+
+                <EditText
+                    android:textColorHint="#666666"
+                    android:id="@+id/order_address_ed"
+                    android:layout_centerVertical="true"
+                    android:layout_below="@+id/order_address_tv"
+                    android:background="@null"
+                    android:hint="请输入收货地址"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"/>
+
+            </RelativeLayout>
+            <View
+                android:background="#efefef"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+            </View>
+
+
+            <Button
+                android:background="@drawable/btn_style"
+                android:id="@+id/ordr_commint_btn"
+                android:text="提交订单"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

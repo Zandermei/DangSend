@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">糕点配送</string>
+    <string name="first">首页</string>
+    <string name="order">订单</string>
+    <string name="person">我的</string>
+    <string name="tuj">推荐</string>
+    <string name="getnew">重新获取</string>
+    <string name="send_s">后再次发送</string>
+    <string name="input_phone">请输入手机号</string>
+    <string name="input_code">请输入验证码</string>
+    <string name="phone_nul">手机号不能为空</string>
+    <string name="code_send">验证码发送成功</string>
+    <string name="neteror">网络连接失败,请检查网络</string>
+    <string name="code_error">验证码错误</string>
+    <string name="zhucexieyi">用户注册协议</string>
+    <string name="loginout">退出登录</string>
+    <string name="about">关于我们</string>
+    <string name="back">意见反馈</string>
+    <string name="yhj">联系客服</string>
+    <string name="order_my">我的订单</string>
+    <string name="title_dialog_msg">是否退出登录</string>
+    <string name="title_dialog">提示</string>
+    <string name="version">当前版本v2.0</string>
+    <string name="back_hint">请提出您的宝贵意见</string>
+    <string name="call_deind">请允许应用拨打电话权限</string>
+</resources>

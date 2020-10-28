@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.two.dangsend.widget.ImageTitleBar
+        android:layout_width="match_parent"
+        android:id="@+id/title_msg"
+        android:layout_height="wrap_content">
+    </com.two.dangsend.widget.ImageTitleBar>
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/order_msg_img"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/order_msg_title"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:textColor="#ee3344"
+                android:id="@+id/order_msg_money"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <include layout="@layout/line_view"></include>
+
+            <TextView
+                android:id="@+id/order_msg_fw"
+                android:text="货到付款     12小时内配送"
+                android:textColor="#666666"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:background="#e4e4e4"
+                android:layout_width="match_parent"
+                android:layout_height="5dp">
+            </TextView>
+
+            <TextView
+                android:textColor="#666666"
+                android:gravity="center_vertical"
+                android:id="@+id/order_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:text="商品类别:糕点"
+                android:textColor="#666666"
+                android:gravity="center_vertical"
+                android:id="@+id/order_tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:text="口味:原味"
+                android:textColor="#666666"
+                android:gravity="center_vertical"
+                android:id="@+id/order_tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:text="是否添加糖:添加糖"
+                android:textColor="#666666"
+                android:gravity="center_vertical"
+                android:id="@+id/order_tv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:text="包装:礼盒装"
+                android:textColor="#666666"
+                android:gravity="center_vertical"
+                android:id="@+id/order_tv5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/order_btn_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/order_btn"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_style"
+            android:text="立即购买"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.two.dangsend">
+
+    <dist:module dist:instant="true" />
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_dg"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+
+
+
+        <activity android:name=".ui.ActivityCkCake"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".ui.ActivityCmCake"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity android:name=".ui.ActivityMsg"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".ui.OrderMsgActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".ui.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+                        <intent-filter>
+                            <action android:name="android.intent.action.MAIN" />
+
+                            <category android:name="android.intent.category.LAUNCHER" />
+                        </intent-filter>
+
+        </activity>
+
+
+        <activity android:name=".ui.OrderCommintActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity android:name=".ui.ActivityAbout"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".ui.ActivityBackMsg"
+            android:screenOrientation="portrait"></activity>
+
+
+
+    </application>
+
+</manifest>
